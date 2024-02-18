@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cards Transparentes</title>
+</head>
+<body>
+    <main class="container">
+
+        <section class="card">
+            <article class="content">
+                <h2>01</h2>
+                <h3>Card Um</h3>
+                <p>Lorem Ipsum é simplesmente uma simulação de texto da 
+                    indústria tipográfica e de impressos, e vem sendo 
+                    utilizado desde o século XVI, quando um impressor 
+                    desconhecido pegou uma bandeja de tipos e os embaralhou 
+                    para fazer um livro de modelos de tipos. <br><br>
+                        
+                    Lorem Ipsum sobreviveu não só a cinco séculos, como 
+                    também ao salto para a editoração eletrônica, 
+                    permanecendo essencialmente inalterado. <br><br>
+                        
+                    Se popularizou na década de 60, quando a Letraset 
+                    lançou decalques contendo passagens de Lorem Ipsum, 
+                    e mais recentemente quando passou a ser integrado a 
+                    softwares de editoração eletrônica como Aldus PageMaker.
+                </p>
+                <a href="#">Informações</a>
+            </article>
+        </section>
+
+        <section class="card">
+            <article class="content">
+                <h2>02</h2>
+                <h3>Card Dois</h3>
+                <p>Lorem Ipsum é simplesmente uma simulação de texto da 
+                    indústria tipográfica e de impressos, e vem sendo 
+                    utilizado desde o século XVI, quando um impressor 
+                    desconhecido pegou uma bandeja de tipos e os embaralhou 
+                    para fazer um livro de modelos de tipos. <br><br>
+                        
+                    Lorem Ipsum sobreviveu não só a cinco séculos, como 
+                    também ao salto para a editoração eletrônica, 
+                    permanecendo essencialmente inalterado. <br><br>
+                        
+                    Se popularizou na década de 60, quando a Letraset 
+                    lançou decalques contendo passagens de Lorem Ipsum, 
+                    e mais recentemente quando passou a ser integrado a 
+                    softwares de editoração eletrônica como Aldus PageMaker.
+                </p>
+                <a href="#">Informações</a>
+            </article>
+        </section>
+
+        <section class="card">
+            <article class="content">
+                <h2>03</h2>
+                <h3>Card Três</h3>
+                <p>Lorem Ipsum é simplesmente uma simulação de texto da 
+                    indústria tipográfica e de impressos, e vem sendo 
+                    utilizado desde o século XVI, quando um impressor 
+                    desconhecido pegou uma bandeja de tipos e os embaralhou 
+                    para fazer um livro de modelos de tipos. <br><br>
+                        
+                    Lorem Ipsum sobreviveu não só a cinco séculos, como 
+                    também ao salto para a editoração eletrônica, 
+                    permanecendo essencialmente inalterado. <br><br>
+                        
+                    Se popularizou na década de 60, quando a Letraset 
+                    lançou decalques contendo passagens de Lorem Ipsum, 
+                    e mais recentemente quando passou a ser integrado a 
+                    softwares de editoração eletrônica como Aldus PageMaker.
+                </p>
+                <a href="#">Informações</a>
+            </article>
+        </section>
+
+    </main>
+
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        // altera apenas o primeiro seletor de card o 01
+        /*VanillaTilt.init(document.querySelector(".card"), {
+            max: 25,
+            speed: 400
+        });*/
+        
+        //Altera todos so seletores com tag card
+        VanillaTilt.init(document.querySelectorAll(".card"),{
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.5 /*505 do brilho do reflexo*/
+        });
+    </script>
+</body>
+</html>

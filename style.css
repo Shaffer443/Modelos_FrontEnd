@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /*background-color: #161623;*/
+    background: url('imagens/fantasy-art-forest-magic-digital-art-wallpaper-eba61c8d43c1ef597504fb49ad6c2cb0.jpg');
+    background-repeat: no-repeat;
+    background-size:cover; /*cover = auto ajuste*/
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -khtml-background-size: cover;
+    -moz-background-size: cover;
+}
+
+    .container{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px;
+        flex-wrap: wrap;
+        z-index: 1;
+    }
+
+        .card{
+            position: relative;
+            width: 330px;
+            height: 680px;
+            margin: 30px;
+            box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+            border-radius: 15px;
+            background: rgba(255,255,255,0.1);
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top: 1px solid rgba(255,255,255,0.5); /*Claridade nas bordas*/
+            border-left: 1px solid rgba(255,255,255,0.5);   /*Claridade nas bordas*/
+
+            /*usar esta aprte abaixo apenas se tiver imagemd e fundo no projeto*/
+            backdrop-filter: blur(5px); /*desfoque do card, deixando mais fosco e em destque*/
+
+        }
+
+            .content{
+                padding: 20px;
+                text-align: center; /*Alinhamento do texto*/
+                transform: translateY(100px); /*Faz descer em 100px a animação*/
+                opacity: 0; /*faz sumir*/
+                transition: 0.5s; /*Tempo da transição descer, só descer e sumir*/
+            }
+
+                .content h2{
+                    position: absolute;
+                    top: -80px;
+                    right: 30px;
+                    font-size: 8em;
+                    color: rgba(255,255,255,0.05);
+                    pointer-events: none;
+                }
+
+                .content h3{
+                    font-size: 1.8em;
+                    color: #fff;
+                    z-index: 1;
+                    
+                }
+
+                .content p{
+                    font-size: 1em;
+                    color: #ffff;
+                    font-weight: 300;
+                }
+
+                .content a{
+                    position: relative;
+                    display: inline-block;
+                    padding: 8px 20px;
+                    margin-top: 15px;
+                    background: #ffff;
+                    color: #000;
+                    text-decoration: none;
+                    border-radius: 20px;
+                    font-weight: 500; /*destaque da fonte, como negrito(bold) e afins*/
+                    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+                }
+
+        .card:hover .content{
+            transform: translateY(0px); /*faz voltar ao local normal*/
+            opacity: 1; /*faz aparecer*/
+        }
