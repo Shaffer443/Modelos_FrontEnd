@@ -97,3 +97,26 @@ body{
             transform: translateY(0px); /*faz voltar ao local normal*/
             opacity: 1; /*faz aparecer*/
         }
+
+footer{
+    color: #fff;
+    text-shadow: 5px 5px 10px rgba(255,255,255,0.5);
+}
+
+    footer a{
+        position: relative;
+        display: inline-block;
+        padding: 8px 20px;
+        margin-top: 15px;
+        background: #ffff;
+        color: #000;
+        text-decoration: none;
+        border-radius: 20px;
+        font-weight: 500; /*destaque da fonte, como negrito(bold) e afins*/
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    footer a:hover{
+        background: #cadf30;
+        box-shadow: 1px 1px 20px rgba(0,016,075,0.9);
+    }
